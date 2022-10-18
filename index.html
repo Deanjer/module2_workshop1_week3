@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop 1 - week3</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <form action="doelbestand.php" method="get">
+        Voornaam:
+        <input type="text" name="vnaam" placeholder="Voornaam" /><br />
+        <br>
+        Achternaam :
+        <input type="text" name="anaam" placeholder="Achternaam" /><br />
+        <br>
+        Geboortedatum
+        <input
+          type="date"
+          name="datum"
+          placeholder="Jouw geboortedatum"
+        /><br />
+
+        <input type="daytime-local" />
+        <br>
+        <input type="time" />
+        <br>
+        <input type="week" />
+        <br>
+        <input type="month" />
+        <br>
+        <input
+          id="country"
+          type="text"
+          name="country"
+          size="40"
+          list="countries"
+        />
+        <br>
+        <datalist id="countries">
+          <option value="Australia">
+          <option value="Canada">
+          <option value="Germany">
+          <option value="France">
+          <option value="United kingdom">
+          <option value="United stated">
+        </datalist>
+        <br>
+        <input type="number" min="5" max="100" step="5" value="10" />
+        <br>
+        <input type="email" required/>
+        <br>
+        <input type="file"/>
+        <br>
+        <input type="color"/>
+        <br>
+        <input type="range" min="1" max="10"/>
+        <br>
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
